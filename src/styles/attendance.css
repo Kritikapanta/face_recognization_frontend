@@ -1,0 +1,164 @@
+/* Attendance Page Styles */
+.attendance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #fff;
+  padding: 40px 20px;
+  padding-top: 120px;
+}
+
+.attendance-title {
+  font-size: 42px;
+  color: #140c80;
+  margin-bottom: 40px;
+  font-family: 'Abhaya Libre', serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.welcome-section {
+  background-color: #e2ecfa;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #202a74;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 28px;
+  color: #140c80;
+  margin: 0 0 15px 0;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.user-role {
+  font-size: 20px;
+  color: #333;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+}
+
+.attendance-info {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.attendance-info h3 {
+  font-size: 24px;
+  color: #140c80;
+  margin-bottom: 20px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.attendance-info p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.attendance-status {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.status-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  width: 200px;
+  border: 2px solid #024ce5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-5px);
+}
+
+.status-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.status-card h4 {
+  font-size: 18px;
+  color: #140c80;
+  margin: 0 0 10px 0;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.status-text {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .attendance-container {
+    padding-top: 100px;
+    padding: 30px 15px;
+  }
+  
+  .attendance-title {
+    font-size: 32px;
+  }
+  
+  .welcome-section {
+    padding: 20px;
+  }
+  
+  .welcome-section h2 {
+    font-size: 24px;
+  }
+  
+  .user-role {
+    font-size: 18px;
+  }
+  
+  .attendance-info h3 {
+    font-size: 20px;
+  }
+  
+  .attendance-info p {
+    font-size: 16px;
+  }
+  
+  .attendance-status {
+    gap: 20px;
+  }
+  
+  .status-card {
+    width: 170px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .attendance-status {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .status-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,314 @@
+/* Administrator Page Styles */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background-color: #fff;
+  padding: 30px;
+  padding-top: 120px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.admin-title {
+  font-size: 36px;
+  color: #140c80;
+  margin-bottom: 30px;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+}
+
+.admin-action-buttons {
+  display:flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 450px;
+  margin-bottom: 40px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Abhaya Libre', serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height: 50px;
+  text-align: center;
+}
+
+.add-btn {
+  background-color: #024ce5;
+  color: white;
+  width: 400px;
+}
+
+.add-btn:hover {
+  background-color: #1f396e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(2, 76, 229, 0.3);
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  width: 300px;
+}
+
+.remove-btn:hover {
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(220, 53, 69, 0.3);
+}
+
+.btn-icon {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.btn-text {
+  font-size: 18px;
+}
+
+/* Attendance Section */
+.attendance-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #140c80;
+  margin: 0;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filter-label {
+  font-size: 16px;
+  color: #6c757d;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.filter-btn:hover {
+  background-color: #e9ecef;
+}
+
+.filter-btn.active {
+  background-color: #024ce5;
+  color: white;
+  border-color: #024ce5;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+/* Attendance Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Abhaya Libre', serif;
+  min-width: 800px;
+}
+
+.attendance-table th {
+  background-color: #e2ecfa;
+  color: #140c80;
+  font-weight: 600;
+  padding: 18px 16px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 2px solid #202a74;
+}
+
+.attendance-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 15px;
+  color: #333;
+}
+
+.attendance-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.attendance-status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.attendance-status.present {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.attendance-status.late {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.attendance-status.absent {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.empty-state h3 {
+  font-size: 22px;
+  color: #6c757d;
+  margin: 0 0 10px 0;
+  font-family: 'Abhaya Libre', serif;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #adb5bd;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: 'Abhaya Libre', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .admin-container {
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  .admin-title {
+    font-size: 30px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-action-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .attendance-section {
+    padding: 20px;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  
+  .empty-state {
+    padding: 40px 15px;
+  }
+  
+  .empty-icon {
+    font-size: 50px;
+  }
+  
+  .empty-state h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-container {
+    padding: 15px;
+    padding-top: 90px;
+  }
+  
+  .admin-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    padding: 6px 15px;
+    font-size: 13px;
+  }
+}
